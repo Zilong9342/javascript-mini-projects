@@ -1,0 +1,102 @@
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h2 {
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 2rem;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px;
+    background-color: #4f46e5; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.history-section {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+#expenseList {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#expenseList li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9fafb;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+#expenseList button {
+    padding: 2px 8px;
+    background: #ff4d4d;
+    font-size: 12px;
+}
+
+.secondary-btn {
+    background-color: #94a3b8 !important;
+    width: 100%;
+    margin-top: 10px;
+}

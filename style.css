@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Deep tech navy */
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hub-container {
+    max-width: 900px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+header p { color: #94a3b8; margin-bottom: 50px; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #334155;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8; 
+}
+
+.icon { font-size: 3rem; margin-bottom: 15px; }
+.status { font-size: 0.8rem; background: #059669; padding: 4px 10px; border-radius: 20px; }
+.coming-soon { background: #475569; }
